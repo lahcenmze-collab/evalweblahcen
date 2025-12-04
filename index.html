@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mon Site - Lahcen</title>
+  <style>
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    html, body { 
+      height: 100%; 
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 200vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .site-header { 
+      background-color: #0066cc; 
+      color: white; 
+      padding: 15px;
+      text-align: center;
+    }
+
+    .site-header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .nav-tabs { 
+      list-style: none; 
+      display: flex; 
+      gap: 20px; 
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-tabs a { 
+      color: white; 
+      text-decoration: none; 
+      font-weight: bold;
+      padding: 8px 15px;
+      background-color: #004499;
+      border-radius: 5px;
+    }
+
+    .nav-tabs a:hover {
+      background-color: #003366;
+    }
+
+    main { 
+      flex: 1; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+      padding: 20px; 
+      width: 100%;
+    }
+
+    .section { 
+      background-color: white; 
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 { 
+      margin-bottom: 15px; 
+      color: #0066cc;
+      font-size: 25px;
+    }
+
+    .section-img { 
+      width: 100%; 
+      height: auto;
+      max-height: 350px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .section p { 
+      margin-bottom: 12px;
+      line-height: 1.6;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .section a { 
+      color: #0066cc; 
+      text-decoration: none; 
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .section a:hover {
+      color: #004499;
+      text-decoration: underline;
+    }
+
+    form { 
+      margin-top: 15px;
+    }
+
+    label { 
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    input { 
+      padding: 10px; 
+      border: 2px solid #ddd; 
+      border-radius: 4px; 
+      font-size: 16px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input:focus { 
+      outline: none; 
+      border-color: #0066cc;
+      background-color: #f9f9f9;
+    }
+
+    button { 
+      padding: 12px 25px; 
+      border: none; 
+      background-color: #00aa00; 
+      color: white; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      font-size: 16px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    button:hover { 
+      background-color: #008800;
+    }
+
+    .confirmation { 
+      margin-top: 15px; 
+      padding: 15px;
+      background-color: #e8f5e9; 
+      border: 2px solid #4caf50;
+      border-radius: 4px; 
+      color: #2e7d32; 
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 400px;
+    }
+
+    .confirmation.error {
+      background-color: #ffebee;
+      border-color: #f44336;
+      color: #c62828;
+    }
+
+    .site-footer { 
+      text-align: center; 
+      padding: 30px; 
+      background-color: #333; 
+      color: white;
+      border-top: 3px solid #0066cc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      flex-direction: column;
+    }
+
+    .creator-info {
+      font-weight: bold;
+      color: #ffcc00;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 15px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+      }
+
+      button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Mon Site Web</h1>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#section1">Accueil</a></li>
+        <li><a href="#section2">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1" class="section">
+      <h2>Accueil</h2>
+      <img src="https://picsum.photos/900/300?random=1" alt="Photo accueil" class="section-img" />
+      
+      <p>Coucou ! Moi c'est Lahcen et j'ai créé ce site web tout seul. J'apprends le HTML et CSS en ce moment et j'ai décidé de faire mon propre site pour pratiquer.</p>
+      
+      <p>Sur ce site j'ai mis un en-tête avec des boutons de navigation, deux sections avec des photos, et un formulaire de contact. C'est pas super compliqué mais ça marche bien et j'en suis content !</p>
+      
+      <a href="#section2">Clique ici pour le formulaire</a>
+    </section>
+
+    <section id="section2" class="section">
+      <h2>Contact</h2>
+      <img src="https://picsum.photos/900/300?random=2" alt="Photo contact" class="section-img" />
+
+      <p>Si tu veux m'envoyer un message, tu peux remplir le formulaire ci-dessous avec ton nom et ton email. Je vais recevoir le message et te répondre.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Ton nom :</label>
+        <input 
+          type="text" 
+          name="name" 
+          id="name" 
+          placeholder="Écris ton nom" 
+          required 
+        />
+
+        <label for="email">Ton email :</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="Écris ton email" 
+          required 
+        />
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div id="confirmation" class="confirmation" hidden></div>
+
+      <p style="margin-top: 15px;"><a href="#section1">Retour à l'accueil</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="creator-info" id="creatorInfo"></p>
+    <p class="copyright">© 2025 - Par Lahcen</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const creatorInfo = document.getElementById("creatorInfo");
+      
+      fetch('get-creator.php')
+        .then(response => response.text())
+        .then(data => {
+          creatorInfo.textContent = data;
+        })
+        .catch(error => {
+          creatorInfo.textContent = "Page web créée par Lahcen";
+        });
+
+      const form = document.getElementById("contactForm");
+      const confirmation = document.getElementById("confirmation");
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!name || !email || !emailRegex.test(email)) {
+          confirmation.className = "confirmation error";
+          confirmation.hidden = false;
+          confirmation.textContent = "Attention ! Remplis bien ton nom et ton email.";
+          return;
+        }
+
+        confirmation.className = "confirmation";
+        confirmation.hidden = false;
+        confirmation.textContent = "Salut " + name + " ! J'ai bien reçu ton email (" + email + "). Merci beaucoup !";
+        
+        form.reset();
+        document.getElementById("name").focus();
+      });
+    });
+  </script>
+</body>
+</html>
